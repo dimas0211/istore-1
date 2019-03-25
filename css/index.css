@@ -1,0 +1,68 @@
+:root {
+    font-size: 15px;
+   
+}
+
+.black_top_line {
+    background-color: black;
+}
+
+.main_toolbar li {
+    display: inline;
+    color: white;
+}
+
+.containers_for_top_logo li{
+    display: inline;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+
+}
+.main_product_menu li {
+    display: inline;
+    font-size: 1.5rem;
+
+}
+
+.popular_prod_bar li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+#section_watches{
+    background-color: rgb(240, 240, 240);
+}
+
+.four_section_item {
+   float: left;
+   margin-right: 1.5%;
+   width: 48.5%;
+   position: relative;
+}
+
+.four_section_item:nth-left-of-type(2n){
+    margin-right: 0;
+} 
+
+.four_section_pic {
+    max-width: 100%;
+    display: block;
+}
+
+.four_section_link {
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.bottom_toolbar li {
+    display: inline;
+}
+
+.four_section_text {
+    position: relative;
+    top: 50%;
+}
