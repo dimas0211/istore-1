@@ -1,31 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Hammersmith+One');
+
 :root {
-    font-size: 15px;
-   
+    --main-color: black;
+    --secondary-color: white;
+    font-family: 'PT+Sans', sans-serif;
 }
 
-.black_top_line {
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, p, div, nav {
+    margin: 0;
+    padding: 0;
+}
+
+
+header .black_top_line {
     background-color: black;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.main_toolbar li {
+header .container_for_profile_pic img {
+    width: 20px;
+    margin: 10px 10px;
+    padding: 0;
+    
+}
+
+header .container_black_line_logos_soc img {
+    width: 20px;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+header .container_black_line_logos_soc {
+    padding:0;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+header .container_for_profile_pic {
+    padding:0;
+    margin: 0 30px;
+}
+
+header .container_black_toolbar {
+    max-height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container_black_toolbar li {
     display: inline;
     color: white;
+    list-style-type: none;
+    margin: 0 15px ;
 }
 
-.containers_for_top_logo li{
+header .container_black_toolbar li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header .blackline_left {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .blackline_right {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container_black_toolbar li a:hover {
+    text-decoration: underline;
+}
+
+/* end of top blackline*/
+
+
+header .container_logo_and_cart {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .main_logo_container a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+header .ispot_logo {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 4rem;
+    margin: none;
+}
+
+header .ispot_logo img {
+    width: 3.5rem;
+}
+
+header .cart_icon img{
+    width: 3.5rem;
+    margin: 15px;
+}
+
+header .main_product_menu li {
     display: inline;
-}
-
-main {
-    text-align: center;
-    margin: auto;
-
-}
-.main_product_menu li {
-    display: inline;
+    list-style-type: none;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 1.5rem;
-
+    margin: 5px;
 }
+
+header .main_product_menu li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+header .main_product_menu li a:hover {
+    text-decoration: underline;
+}
+
+header .main_product_menu {
+    padding: 0;
+}
+
+header .main_nav_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+}
+/* header bottom*/
+
+
+
+
+
+
+
+
+
+
 
 .popular_prod_bar li {
     display: inline;
