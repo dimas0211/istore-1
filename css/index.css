@@ -60,7 +60,7 @@ header .container_black_toolbar li {
     display: inline;
     color: white;
     list-style-type: none;
-    margin: 0 15px ;
+    margin: 0 5px ;
 }
 
 header .container_black_toolbar li a {
@@ -80,6 +80,10 @@ header .blackline_right {
 
 header .container_black_toolbar li a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+    
 }
 
 /* end of top blackline*/
@@ -139,20 +143,48 @@ header .main_nav_container {
 }
 /* header bottom*/
 
-
-
-
-
-
-
-
-
-
-
-.popular_prod_bar li {
-    display: inline;
+main .popular_heading h2{
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
+
+main .
+
+main .popular_heading li {
+    display: inline;
+    list-style-type: none;
+    font-family: 'Hammersmith One', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+main .popular_prod_bar li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+main .popular_prod_bar li a:hover {
+    text-decoration: underline;
+}
+
+main .product_image img {
+    width: 10rem; 
+    display: block;
+}
+
+main .product_plate h4, 
+main .product-card p {
+    
+}
+
+main .usd {
+    
+}
+
+.add_to_cart button
+
 
 #section_watches{
     background-color: rgb(240, 240, 240);
