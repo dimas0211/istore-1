@@ -9,155 +9,341 @@
 body {
     max-width: 980px;
     margin: auto;
+    /*min-width: 320px;*/
 }
 
-h1, h2, h3, p, div, nav {
+h1,
+h2,
+h3,
+p,
+div,
+nav {
     margin: 0;
     padding: 0;
 }
 
 
-header .black_top_line {
-    background-color: black;
-    max-height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/*Burger Menu: */
 
-header .container_for_profile_pic img {
-    width: 20px;
-    margin: 10px 10px;
-    padding: 0;
+@media (min-width: 320px) {
+
+    header .black_top_line {
+        display: none;
+    }
+    header .blackline_left {
+        display: none;
+    }
+    header .blackline_right {
+        display: none;
+    }
+    /*header .container_logo_and_cart {*/
+    /*    margin: 20px 20px;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+    header .ispot_logo img {
+        
+        width: 10rem;
+        margin: 15px 0;
+
+    }
+
+    header .cart_icon img {
+       
+        width: 2rem;
+        margin: 25px 25px 25px 0;
+
+    }
+
+    /*header .main_logo_container {*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*}*/
+    /*header .cart_icon {*/
+    /*    display: flex;*/
+    /*    justify-content: end;*/
+    /*}*/
     
-}
-
-header .container_black_line_logos_soc img {
-    width: 20px;
-    margin: 10px 10px;
-    padding: 0;
-}
-
-header .container_black_line_logos_soc {
-    padding:0;
-    margin: 0 30px;
-    display: flex;
-    justify-content: space-around;
-}
-header .container_for_profile_pic {
-    padding:0;
-    margin: 0 30px;
-}
-
-header .container_black_toolbar {
-    max-height: 20px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-header .container_black_toolbar li {
-    display: inline;
-    color: white;
-    list-style-type: none;
-    margin: 0 5px ;
-}
-
-header .container_black_toolbar li a {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-header .blackline_left {
-    display: flex;
-    justify-content: space-around;
-}
-
-header .blackline_right {
-    display: flex;
-    justify-content: space-around;
-}
-
-header .container_black_toolbar li a:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 550px) {
+    header .container_burger_line {
+        display: flex;
+        justify-content: space-between;
+    }
     
+    
+    header .container_burger_line a {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+
+    header .container_burger_line a:hover {
+        color: tomato;
+    }
+
+    header #menuToggle {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 30px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    header #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+
+    /*
+ * Just a quick hamburger
+ */
+    header #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    header #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    header #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    header #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    /*
+ * But let's hide the middle one.
+ */
+    header #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    header #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    header #burger_menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    header #burger_menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    /*
+ * And let's slide it in from the left
+ */
+    header #menuToggle input:checked~ul {
+        transform: none;
+    }
 }
 
-/* end of top blackline*/
+
+/*DISCTOP: */
+
+@media (min-width: 670px) {
+    header #menuToggle {
+        display: none;
+    }
+    header .black_top_line {
+        background-color: black;
+        max-height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .container_for_profile_pic img {
+        width: 20px;
+        margin: 10px 10px;
+        padding: 0;
+
+    }
+
+    header .container_black_line_logos_soc img {
+        width: 20px;
+        margin: 10px 10px;
+        padding: 0;
+    }
+
+    header .container_black_line_logos_soc {
+        padding: 0;
+        margin: 0 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    header .container_for_profile_pic {
+        padding: 0;
+        margin: 0 30px;
+    }
+
+    header .container_black_toolbar {
+        max-height: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .container_black_toolbar li {
+        display: inline;
+        color: white;
+        list-style-type: none;
+        margin: 0 5px;
+    }
+
+    header .container_black_toolbar li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    header .blackline_left {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .blackline_right {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .container_black_toolbar li a:hover {
+        text-decoration: underline;
+    }
 
 
-header .container_logo_and_cart {
-    margin: 20px 20px;
-    display: flex;
-    justify-content: space-between;
+
+    /* end of top blackline*/
+    header .container_logo_and_cart {
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .ispot_logo img {
+        width: 10rem;
+        margin: 15px;
+    }
+
+    header .cart_icon img {
+        width: 3.5rem;
+        margin: 15px;
+    }
+
+    header .main_product_menu li {
+        display: inline;
+        list-style-type: none;
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 1.5rem;
+        margin: 5px;
+    }
+
+    header .main_product_menu li a {
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+    header .main_product_menu li a:hover {
+        text-decoration: underline;
+    }
+
+    header .main_product_menu {
+        padding: 0;
+    }
+
+    header .main_nav_container {
+        display: flex;
+        justify-content: center;
+        margin: 30px 20px;
+    }
+    /* header bottom*/
 }
 
-header .main_logo_container a{
-    text-decoration: none;
-    color: var(--main-color);
-}
 
-header .ispot_logo {
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 4rem;
-    margin: none;
-}
 
-header .ispot_logo img {
-    width: 3.5rem;
-}
 
-header .cart_icon img{
-    width: 3.5rem;
-    margin: 15px;
-}
 
-header .main_product_menu li {
-    display: inline;
-    list-style-type: none;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 1.5rem;
-    margin: 5px;
-}
 
-header .main_product_menu li a {
-    text-decoration: none;
-    color: var(--main-color);
-}
 
-header .main_product_menu li a:hover {
-    text-decoration: underline;
-}
 
-header .main_product_menu {
-    padding: 0;
-}
 
-header .main_nav_container {
-    display: flex;
-    justify-content: center;
-    margin: 30px 20px;
-}
-/* header bottom*/
 
-main .popular_heading h2{
+
+
+main .popular_heading h2 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
 }
 
-main .
-
-main .popular_heading li {
+main .popular_prod_bar li {
     display: inline;
     list-style-type: none;
     font-family: 'Hammersmith One', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     margin: 5px;
+
 }
 
 main .popular_prod_bar li a {
@@ -169,23 +355,87 @@ main .popular_prod_bar li a:hover {
     text-decoration: underline;
 }
 
-main .product_image img {
-    width: 10rem; 
-    display: block;
+main .popular_heading {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-main .product_plate h4, 
-main .product-card p {
-    
+main .product_image img {
+    display: block;
+    width: 150px;
+}
+
+main .product_price span,
+main .availability_status {
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+main .product_name h4 {
+    color: rgb(0, 153, 255);
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .availability_status {
+    margin: 5px;
+    color: green;
+    padding: 0;
 }
 
 main .usd {
-    
+    font-weight: bold;
+    padding: 0;
+    margin: 5px;
 }
 
-.add_to_cart button
+.button {
+    border-radius: 4px;
+    background-color: #3399ff;
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    width: absolute;
+    transition: all 0.5s;
+}
 
 
+.button span {
+    font-family: 'PT+Sans', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.product_plate {
+    display: flex;
+    justify-content: center;
+}
+
+/*
 #section_watches{
     background-color: rgb(240, 240, 240);
 }
