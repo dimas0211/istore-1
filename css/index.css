@@ -321,13 +321,11 @@ main {
 }
 main .carousel img {
     width: 40rem;
-    
 }
 
-main .carousel {
+ .carousel {
     margin: 25px;
-    display:flex;
-    justify-content: center;
+    justify-self: center;
     
 }
  
