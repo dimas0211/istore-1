@@ -25,7 +25,8 @@ nav {
 
 /*Burger Menu: */
 
-@media (min-width: 320px) {
+@media (max-width: 670px)
+    /*max-width: 670px) {*/ {
 
     header .black_top_line {
         display: none;
@@ -36,11 +37,7 @@ nav {
     header .blackline_right {
         display: none;
     }
-    /*header .container_logo_and_cart {*/
-    /*    margin: 20px 20px;*/
-    /*    display: flex;*/
-    /*    justify-content: space-between;*/
-    /*}*/
+    
     header .ispot_logo img {
         width: 10rem;
         margin: 15px 0;
@@ -50,19 +47,10 @@ nav {
        width: 2rem;
        margin: 25px 25px 25px 0;
     }
-     header .main_nav_container {
+     header .main_nav_container ul {
          display: none;
      }
 
-    /*header .main_logo_container {*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*}*/
-    /*header .cart_icon {*/
-    /*    display: flex;*/
-    /*    justify-content: end;*/
-    /*}*/
-    
     header .container_burger_line {
         display: flex;
         justify-content: space-between;
@@ -273,23 +261,24 @@ nav {
 
 
     /* end of top blackline*/
-    header .container_logo_and_cart {
-        margin: 20px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
+    
     header .ispot_logo img {
         width: 10rem;
-        margin: 15px;
+        margin: 15px 0;
     }
 
     header .cart_icon img {
-        width: 3.5rem;
-        margin: 15px;
+       width: 2rem;
+       margin: 25px 25px 25px 0;
+  
     }
-
-    header .main_product_menu li {
+    
+    header .container_burger_line {
+        display: flex;
+        justify-content: space-between;
+    } 
+     
+     header .main_product_menu li {
         display: inline;
         list-style-type: none;
         font-family: 'Hammersmith One', sans-serif;
@@ -327,19 +316,36 @@ nav {
 
 
 
-
-main .carousel img {
-    display: none;
+main {
+    margin: 50px 0;
 }
+main .carousel img {
+    width: 40rem;
     
+}
 
+main .carousel {
+    margin: 25px;
+    display:flex;
+    justify-content: center;
+    
+}
+ 
+main .popular_heading{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
 
 main .popular_heading h2 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
 }
-
+main .popular_prod_bar {
+    display: flex;
+    justify-content: center;
+}
 main .popular_prod_bar li {
     display: inline;
     list-style-type: none;
@@ -347,7 +353,10 @@ main .popular_prod_bar li {
     text-transform: uppercase;
     font-size: 1rem;
     margin: 5px;
+}
 
+main ul.popular_prod_bar {
+    padding: 0px;
 }
 
 main .popular_prod_bar li a {
@@ -365,15 +374,25 @@ main .popular_heading {
     padding: 0;
 }
 
+/*PRODUCT CARD*/
 
 
+.product_plate {
+    width: 10rem;
+    justify-self: center;
+}
 
+.product_plate img {
+    display: block;
+    width: 100%;
+    max-width: 10rem;
+}
 
 
 main .product_image img {
     display: block;
     width: 150px;
-}
+    }
 
 main .product_price span,
 main .availability_status {
@@ -381,27 +400,41 @@ main .availability_status {
     padding: 0 5px;
 }
 
-main .product_name h4 {
+main .product_plate h4 {
+    text-align: center;
+}
+
+main .product_name {
     color: rgb(0, 153, 255);
     margin: 5px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
+    
+    }
 
 main .availability_status {
     margin: 5px;
     color: green;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+main .product_price {
+    display: flex;
+    justify-content: center;
 }
 
 main .usd {
     font-weight: bold;
     padding: 0;
     margin: 5px;
+    }
+main .button_container {
+    display: flex;
+    justify-content: center;
 }
 
-.button {
+main .button {
     border-radius: 4px;
     background-color: #3399ff;
     color: var(--secondary-color);
@@ -412,7 +445,7 @@ main .usd {
 }
 
 
-.button span {
+main .button span {
     font-family: 'PT+Sans', sans-serif;
     cursor: pointer;
     display: inline-block;
@@ -420,7 +453,7 @@ main .usd {
     transition: 0.5s;
 }
 
-.button span:after {
+main .button span:after {
     content: '»';
     position: absolute;
     opacity: 0;
@@ -429,19 +462,38 @@ main .usd {
     transition: 0.5s;
 }
 
-.button:hover span {
+main .button:hover span {
     padding-right: 25px;
 }
 
-.button:hover span:after {
+main .button:hover span:after {
     opacity: 1;
     right: 0;
 }
 
+@media (min-width: 670px ){
+    .product_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        position: center;
+    }
+}
 
-.product_plate {
-    display: flex;
-    justify-content: center;
+@media (min-width: 320px ) {
+    .product_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        position: center;
+    }
+}
+
+
+
+/*.product_plate {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
 }
 
 /*
