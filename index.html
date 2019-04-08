@@ -323,26 +323,27 @@
             </ul>
         </div>
         <div class="top_lr">
-            <div class="container_for_question">
+            <section class="container_for_question">
                 <h4>Do you have any questions?</h4>
-                <post method="POST" action="https://formspree.io/supermegacheaterpro@gmail.com">
-                    <div>
-                        <label>
+                <form class="message-form">
+                <!--<post method="POST" action="https://formspree.io/supermegacheaterpro@gmail.com">-->
+                    
+                    <label>
                        Name: <input id="client-name" type="text" placeholder="Name" name="client-name" required>
                     </label>
-                    </div>
-                    <div>
-                        <label>
+                    <br>
+                    <label>
                         Email: <input type="email" placeholder="Email" name="client-email" required>
                     </label>
-                    </div>
-                    <div>
-                        <label>
-                       Write a message:<textarea rows="4" cols="50" name="your-text" placeholder="Write a message" required></textarea>    
+                    <br>
+                    <label>
+                       Write a message:<br><textarea rows="4" cols="50" name="your-text" placeholder="Write a message" required></textarea>    
                     </label>
-                    </div>
-                </post>
-            </div>
+                    <br>
+                    <input type="submit">
+                 </form>   
+                <div class="server-response"></div>
+            </section>
             <div class="container_bottomcontacts">
                 <div class="header_main_logo">
                     <a href="#contacts">
@@ -365,6 +366,8 @@
             </div>
         </div>
     </footer>
+    
+     <script src="js/index.js"></script>
 </body>
 
 </html>
