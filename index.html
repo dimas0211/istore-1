@@ -96,9 +96,48 @@
     </header>
 
     <main>
-        <div class="carousel">
-            <img src="pics/sale_products_pict.png" alt="carousel_sales">
+    <!--<div class="container">-->
+    <!--    <div class="carousel">-->
+    <!--        <input type="radio" id="carousel-1" name="carousel[]" checked>-->
+    <!--        <input type="radio" id="carousel-2" name="carousel[]">-->
+    <!--        <input type="radio" id="carousel-3" name="carousel[]">-->
+    <!--        <ul class="carousel__items">-->
+    <!--            <li class="carousel__item"><img src="pics/carousel1.png" alt="carousel1"></li>-->
+    <!--            <li class="carousel__item"><img src="pics/carousel2.png" alt="carousel2"></li>-->
+    <!--            <li class="carousel__item"><img src="pics/carousel3.png" alt="carousel3"></li>-->
+    <!--        </ul>-->
+    <!--        <div class="carousel__prev">-->
+    <!--            <label for="carousel-1"></label>-->
+    <!--            <label for="carousel-2"></label>-->
+    <!--            <label for="carousel-3"></label>-->
+    
+    <!--        </div>-->
+    <!--        <div class="carousel__next">-->
+    <!--            <label for="carousel-1"></label>-->
+    <!--            <label for="carousel-2"></label>-->
+    <!--            <label for="carousel-3"></label>-->
+    <!--        </div>-->
+    <!--        <div class="carousel__nav">-->
+    <!--            <label for="carousel-1"></label>-->
+    <!--            <label for="carousel-2"></label>-->
+    <!--            <label for="carousel-3"></label>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div class="carousel_container"> 
+        <div class="carousel_images">
+            <img class="mySlides" src="pics/carousel1.png" alt="carousel1">
+            <img class="mySlides" src="pics/carousel2.png" alt="carousel2">
+            <img class="mySlides" src="pics/carousel3.png" alt="carousel3">
         </div>
+        <div class="carousel_buttons">
+            <button class="w3-button" id="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button" id=" w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>       
+        <!--<div class="carousel">-->
+        <!--    <img src="pics/sale_products_pic.png" alt="carousel_sales">-->
+        <!--</div>-->
         <!-- carousel -->
         <section id="popular_products">
             <div class="popular_heading">
@@ -337,7 +376,7 @@
                 </form>
                 <div class="server-response"></div>
             </div>
-            <div class="container_bottomcontacts">
+            <div class="container_bottom_contacts">
                 <div class="header_main_logo">
                     <a href="#contacts">
                         <h3>Contacts <img src="pics/contact_logo.png" alt="tcontact_logo" width="15"></h3>

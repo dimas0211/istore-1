@@ -12,7 +12,15 @@ body {
     min-width: 320px;
 }
 
-
+header {
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+footer {
+    width: 100%;
+}
 
 h1,
 h2,
@@ -49,7 +57,7 @@ nav {
 
     header .cart_icon img {
         width: 2rem;
-        margin: 25px 25px 25px 0;
+        margin: 15px 15px 15px 0;
     }
     header .main_nav_container ul {
         display: none;
@@ -310,27 +318,25 @@ nav {
     /* header bottom*/
 }
 
-
-
-
-
-
-
-
-
+/*MAIN*/
 
 main {
     margin: 50px 0;
 }
 
-main .carousel img {
-    width: 40rem;
+main .carousel_images img {
+    /*display: block;*/
+    /*margin: auto;*/
+    /*width: 100%;*/
+    display: block;
+    margin:auto;
+    width: 85%;
 }
 
-.carousel {
-    margin: 25px;
-    justify-self: center;
-
+main .carousel_buttons {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
 }
 
 main .popular_heading {
@@ -439,7 +445,7 @@ main .button {
     color: var(--secondary-color);
     border: none;
     padding: 10px;
-    width: absolute;
+    /*width: absolute;*/
     transition: all 0.5s;
 }
 
@@ -477,7 +483,7 @@ main .button:hover :after {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        position: center;
+        /*position: center;*/
     }
 }
 
@@ -486,7 +492,7 @@ main .button:hover :after {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
-        position: center;
+        /*position: center;*/
     }
 }
 
@@ -575,7 +581,7 @@ main .accesories_heading_container_grey {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        position: center;
+        /*position: center;*/
     }
     .news_name {
         display: block;
@@ -620,17 +626,12 @@ main .accesories_heading_container_grey {
 
 }
 
-/*@media (max-width: 950px) {*/
+main a{
+    text-decoration: none;
+    color: var(--main-color);
+}
 
-/*   .four_section_container  .four_section_item .text{*/
 
-/*        text-align: center;*/
-
-/*        margin:;*/
-
-/*    }*/
-
-/*}*/
 
 footer .bottom_toolbar li {
     display: inline;
@@ -668,4 +669,13 @@ footer .form_currency_contact_container {
     display: flex;
     justify-content: space-around;
     margin: 20px 20px;
+}
+footer .container_bottom_contacts {
+    display: block;
+    margin:auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--main-color);
 }
