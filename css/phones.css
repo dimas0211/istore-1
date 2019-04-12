@@ -1,0 +1,90 @@
+body {
+    max-width: 980px;
+    margin: auto;
+    min-width: 320px;
+}
+
+header .logo img {
+    display: block;
+    margin: auto;
+    width: 15rem;
+}
+
+/*main .nav-item a {*/
+/*    color: black;*/
+/*}*/
+
+main .nav-item a:hover {
+    text-decoration: underline;
+}
+
+h2#products {
+    text-align: center;
+    margin: 2rem;
+}
+
+.card-img-top {
+    width: 80%;
+    display:block;
+    margin:auto;
+}
+
+div.card.product {
+    width: 16rem;
+    display:block;
+    margin:auto;
+    border: none;
+}
+
+p.card-text {
+    text-align: center;
+    color: green;
+}
+
+.card-title {
+    text-align: center;
+    color: rgb(0, 153, 255);
+}
+.card-body {
+    text-align: center;
+    
+}
+button.btn.btn-info {
+    margin: 1rem;
+}
+ footer .container_forms {
+     margin:2rem;
+     display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+ }
+ 
+footer .converter {
+    padding: 0 5rem;
+}
+footer .converter input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+@media (max-width: 670px) {
+    footer .container_forms {
+     display: block;
+     margin: auto;
+}
+}
+
+footer .logo  {
+    display: block;
+     margin: auto;
+}

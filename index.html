@@ -34,8 +34,8 @@
             </div>
             <div class="blackline_right">
                 <ul class="container_black_toolbar">
+                    <li><a href="#">Products</a></li>
                     <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Exchange</a></li>
                     <li><a href="#">Warranty</a></li>
                     <li><a href="#">News</a></li>
                 </ul>
@@ -50,14 +50,14 @@
                     <span></span>
                     <span></span>
                     <ul id="burger_menu">
-                        <li><a href="#">iPhone</a></li>
+                        <li><a href="phones.html">iPhone</a></li>
                         <li><a href="#">Mac</a></li>
                         <li><a href="#">iPad</a></li>
                         <li><a href="#">Watch</a></li>
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Used Products</a></li>
+                        <li><a href="#">Products</a></li>
                         <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Exchange</a></li>
                         <li><a href="#">Warranty</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Log In</a></li>
@@ -75,15 +75,15 @@
             <!-- header logo iSpot -->
             <div class="cart_icon">
                 <a href="#">
-                                        <img src="pics/cart_icon.png" alt="cart_icon" >
-                                    </a>
+                    <img src="pics/cart_icon.png" alt="cart_icon" >
+                </a>
             </div>
             <!--</div>-->
         </div>
         <!-- header cart -->
         <nav class="main_nav_container">
             <ul class="main_product_menu">
-                <li><a href="#">iPhone</a></li>
+                <li><a href="phones.html">iPhone</a></li>
                 <li><a href="#">Mac</a></li>
                 <li><a href="#">iPad</a></li>
                 <li><a href="#">Watch</a></li>
@@ -96,52 +96,20 @@
     </header>
 
     <main>
-    <!--<div class="container">-->
-    <!--    <div class="carousel">-->
-    <!--        <input type="radio" id="carousel-1" name="carousel[]" checked>-->
-    <!--        <input type="radio" id="carousel-2" name="carousel[]">-->
-    <!--        <input type="radio" id="carousel-3" name="carousel[]">-->
-    <!--        <ul class="carousel__items">-->
-    <!--            <li class="carousel__item"><img src="pics/carousel1.png" alt="carousel1"></li>-->
-    <!--            <li class="carousel__item"><img src="pics/carousel2.png" alt="carousel2"></li>-->
-    <!--            <li class="carousel__item"><img src="pics/carousel3.png" alt="carousel3"></li>-->
-    <!--        </ul>-->
-    <!--        <div class="carousel__prev">-->
-    <!--            <label for="carousel-1"></label>-->
-    <!--            <label for="carousel-2"></label>-->
-    <!--            <label for="carousel-3"></label>-->
-    
-    <!--        </div>-->
-    <!--        <div class="carousel__next">-->
-    <!--            <label for="carousel-1"></label>-->
-    <!--            <label for="carousel-2"></label>-->
-    <!--            <label for="carousel-3"></label>-->
-    <!--        </div>-->
-    <!--        <div class="carousel__nav">-->
-    <!--            <label for="carousel-1"></label>-->
-    <!--            <label for="carousel-2"></label>-->
-    <!--            <label for="carousel-3"></label>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    <div class="carousel_container"> 
-        <div class="carousel_images">
-            <img class="mySlides" src="pics/carousel1.png" alt="carousel1">
-            <img class="mySlides" src="pics/carousel2.png" alt="carousel2">
-            <img class="mySlides" src="pics/carousel3.png" alt="carousel3">
+        <div class="carousel_container">
+            <div class="carousel_images">
+                <img class="mySlides" src="pics/carousel1.png" alt="carousel1">
+                <img class="mySlides" src="pics/carousel2.png" alt="carousel2">
+                <img class="mySlides" src="pics/carousel3.png" alt="carousel3">
+            </div>
+            <div class="carousel_buttons">
+                <button class="button" id="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button" id="w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
         </div>
-        <div class="carousel_buttons">
-            <button class="w3-button" id="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button" id=" w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-        </div>
-    </div>       
-        <!--<div class="carousel">-->
-        <!--    <img src="pics/sale_products_pic.png" alt="carousel_sales">-->
-        <!--</div>-->
-        <!-- carousel -->
         <section id="popular_products">
             <div class="popular_heading">
-                
+
                 <nav>
                     <h2>the most popular products</h2>
                     <ul class="popular_prod_bar">
@@ -158,12 +126,14 @@
                     <img src="pics/iphonex_64gb_silver.png" alt="iphonex_64gb_silver">
                     <h4 class="product_name">Apple iPhone X 64GB Silver</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 845</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                            $ 845 Add to cart
                         </button>
                     </div>
                 </a>
@@ -173,12 +143,14 @@
                     <img src="pics/iphonexs_64gb_gold.jpg" alt="iphonexs_64gb_gold">
                     <h4 class="product_name">Apple iPhone XS 64GB Gold</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 1015</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                            $ 1015 Add to cart
                         </button>
                     </div>
                     </a>
@@ -188,12 +160,14 @@
                     <img src="pics/iphone_xsmax64_spacegrey.jpg" alt="iphone_xsmax64_spacegrey">
                     <h4 class="product_name">Apple iPhone XS Max 64GB Space Gray</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 1080</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                         $ 1080 Add to cart
                         </button>
                     </div>
                     </a>
@@ -204,12 +178,14 @@
                     <img src="pics/iphonexr_64gb_red.jpg" alt="iphonexr_64gb_red">
                     <h4 class="product_name">Apple iPhone XR 64GB (Product) RED</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 790</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                           $ 790 Add to cart
                         </button>
                     </div>
                     </a>
@@ -219,12 +195,14 @@
                     <img src="pics/iphone8_64gb_gold.png" alt="iphone8_64gb_gold">
                     <h4 class="product_name">Apple iPhone 8 64GB Gold</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 625</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                           $ 625 Add to cart
                         </button>
                     </div>
                     </a>
@@ -234,12 +212,14 @@
                     <img src="pics/iphone8plus_64gb_spacegrey.png" alt="iphone8plus_64gb_spacegrey">
                     <h4 class="product_name">Apple iPhone 8 Plus 64GB Space Gray</h4>
                     <p class="availability_status">Available</p>
-                    <p class="product_price">
-                        <span class="usd">$ 725</span>
+                    <p class="info">
+                        <button class="info_button">
+                                 Info
+                        </button>
                     </p>
                     <div class="button_container">
                         <button class="button">
-                                            Add to cart
+                                           $ 725 Add to cart
                         </button>
                     </div>
                     </a>
@@ -350,15 +330,9 @@
     </main>
 
     <footer>
-        <div class="bottom_toolbar_conrainer">
-            <ul class="bottom_toolbar">
-                <li><a href="#">Payment and delivery</a></li>
-                <li><a href="#">Warranty</a></li>
-            </ul>
-        </div>
         <div class="form_currency_contact_container">
             <div class="container_for_question">
-                <h4>Do you have any questions?</h4>
+                <h4>Do you have any questions?</h4><br>
                 <form class="message-form">
                     <label>
                        Name: <input id="client-name" type="text" placeholder="Name" name="client-name" required>
@@ -376,11 +350,36 @@
                 </form>
                 <div class="server-response"></div>
             </div>
-            <div class="container_bottom_contacts">
-                <div class="header_main_logo">
-                    <a href="#contacts">
-                        <h3>Contacts <img src="pics/contact_logo.png" alt="tcontact_logo" width="15"></h3>
-                    </a>
+            <div class="contacts_currency">
+
+                <div>
+                    <h4>Currency converter</h4><br>
+                    <form class="converter">
+                        <label>
+                            From: <input type="text" name="curr-from">
+                        </label>
+                        <br>
+                        <label>
+                            To: <input type="text" name="curr-to">
+                        </label>
+                        <br>
+                        <label>
+                            Amount: <input type="number" name="curr-amount">
+                        </label>
+                        <br>
+                        <label>
+                            Converted: <output type="text" name="curr-converted"></output>
+                        </label>
+                        <br>
+                        <button class="curr-convert">Convert</button><br>
+                    </form>
+                </div>
+                <div class="container_bottom_contacts">
+                    <div class="header_main_logo">
+                        <a href="#contacts">
+                            <h3>Contacts <img src="pics/contact_logo.png" alt="tcontact_logo" width="15"></h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -399,7 +398,8 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <!--<script src="js/cart.js"></script>-->
+    <script src="js/indexp.js"></script>
 </body>
 
 </html>

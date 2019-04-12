@@ -1,0 +1,135 @@
+[
+    {
+        "id": "1",
+        "title": "Apple iPhone 7 Plus 32GB Black",
+        "image": "iphone7_32_black_440.jpg",
+        "description": "Available",
+        "price": 439.99
+    },
+    {
+        "id": "2",
+        "title": "Apple iPhone 7 32GB Silver",
+        "image": "iphone7_32_silver_460.jpg",
+        "description": "Available",
+        "price": 459.99
+    },
+    {
+        "id": "3",
+        "title": "Apple iPhone 7 Plus 32GB Silver",
+        "image": "iphone7_plus_32_silver_565.jpg",
+        "description": "Available",
+        "price": 564.99
+    },
+    {
+        "id": "4",
+        "title": "Apple iPhone 8 Plus 64GB Space Gray",
+        "image": "iphone_8plus_64_spacegray_710.png",
+        "description": "Available",
+        "price": 709.99
+    },
+    {
+        "id": "5",
+        "title": "Apple iPhone 8 64GB Silver",
+        "image": "iphone8_64_silver_590.png",
+        "description": "Available",
+        "price": 589.99
+    },
+    {
+        "id": "6",
+        "title": "Apple iPhone 8 64GB Space Gray",
+        "image": "iphone8_64_spacegray_590.jpg",
+        "description": "Available",
+        "price": 589.99
+    },
+    {
+        "id": "7",
+        "title": "Apple iPhone 7 Plus 32GB Black",
+        "image": "iphone7plus_32_black_565.jpg",
+        "description": "Available",
+        "price": 564.99
+    },
+    {
+        "id": "8",
+        "title": "Apple iPhone SE 32GB Space Gray",
+        "image": "iphone_se_gray_279.jpg",
+        "description": "Available",
+        "price": 279.99
+    },
+    {
+        "id": "9",
+        "title": "Apple iPhone XR 64GB Black",
+        "image": "iphone_xr_64_black_760.jpg",
+        "description": "Available",
+        "price": 759.99
+    },
+    {
+        "id": "10",
+        "title": "Apple iPhone XR 64GB Blue",
+        "image": "iphone_xr_64_blue_765.jpg",
+        "description": "Available",
+        "price": 764.99
+    },
+    {
+        "id": "11",
+        "title": "Apple iPhone XR 64GB White",
+        "image": "iphone_xr_64_white_765.jpg",
+        "description": "Available",
+        "price": 764.99
+    },
+    {
+        "id": "12",
+        "title": "Apple iPhone XR 64GB Yellow",
+        "image": "iphone_xr_64_yellow_770.jpg",
+        "description": "Available",
+        "price": 769.99
+    },
+    {
+        "id": "13",
+        "title": "Apple iPhone XS 64GB Gold",
+        "image": "iphone_xs_64_gold_1015.jpg",
+        "description": "Available",
+        "price": 1014.99
+    },
+    {
+        "id": "14",
+        "title": "Apple iPhone XS 64GB Space Gray",
+        "image": "iphone_xs_64_spacegray_980.jpg",
+        "description": "Available",
+        "price": 979.99
+    },
+    {
+        "id": "15",
+        "title": "Apple iPhone XS 256GB Space Gray",
+        "image": "iphone_xs_256_spacegray_1160.jpg",
+        "description": "Available",
+        "price": 1159.99
+    },
+    {
+        "id": "16",
+        "title": "Apple iPhone XS Max 64GB Space Gray",
+        "image": "iphone_xs_max_64_spacegray_1080.jpg",
+        "description": "Available",
+        "price": 1079.99
+    },
+    {
+        "id": "17",
+        "title": "Apple iPhone XS Max 64GB Gold",
+        "image": "iphone_xsmax_64_gold_1090.jpg",
+        "description": "Available",
+        "price": 1090.99
+    },
+    {
+        "id": "18",
+        "title": "Apple iPhone XS Max 256GB Space Gray",
+        "image": "iphone_xsmax_256_spacegray_1220.jpg",
+        "description": "Available",
+        "price": 1219.99
+    },
+    {
+        "id": "19",
+        "title": "Apple iPhone X 64GB Silver",
+        "image": "iphonex_silver_835.png",
+        "description": "Available",
+        "price": 834.99
+    }
+]

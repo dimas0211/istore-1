@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iSpot Products-Phones</title>
+  <link rel="shortcut icon" href="/pics/apple_logo_black.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/phones.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link smooth" href="#products">Products<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#warranty">Warranty</a>
+          </li>
+        </ul>
+        <div>
+          <a class="nav-link" href="#cartModal" data-toggle="modal">
+                      <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-badge" class="badge badge-light"></span>
+                    </a>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+                <img src="pics/ispot-logo.svg" alt="ispot-logo">
+            </a>
+    </div>
+  </header>
+  <main>
+    <nav class="products">
+      <ul class="nav justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link smooth text-dark" href="#">iPhone<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth text-dark" href="#">Mac</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth text-dark" href="#">iPad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth text-dark" href="#">Watch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth text-dark" href="#">Accessories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth text-dark" href="#">Used Products</a>
+        </li>
+
+      </ul>
+    </nav>
+    <section>
+      <h2 id="products">iPhone</h2>
+      <div class="row products-container">
+        <!--Products are dynamically generated here-->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container_forms">
+      <form>
+        <h5>Do you have any questions?</h5><br>
+        <div class="form-group">
+          <label for="form-control">Name</label>
+          <input class="form-control" type="text" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Write a message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div class="converter">
+        <h5>Currency converter</h5><br>
+        <form >
+          <label>
+            From: <br><input type="text" name="curr-from">
+          </label>
+          <br>
+          <label>
+              To: <br><input type="text" name="curr-to">
+          </label>
+          <br>
+          <label>
+             Amount: <br><input type="number" name="curr-amount">
+          </label>
+          <br>
+          <label>
+             Converted: <br><output type="text" name="curr-converted"></output>
+          </label>
+          <br>
+          <button class="curr-convert btn btn-primary">Convert</button><br>
+        </form>
+      </div>
+      
+            <div class="created">
+                Created by <strong>Dim4yk</strong>
+            </div>
+            <div class="logo">
+                <a href="#">
+                   <img src="pics/facebook_logo_black.png" alt="facebook_icon" width="16"> 
+                </a>
+                <a href="#">
+                    <img src="pics/insta_logo_black.jpg" alt="insta_icon" width="16">
+                </a>
+            </div>
+        
+  </footer>
+  <!-- Modal Product Info -->
+  <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <img class="card-img-top" src="" alt="">
+          <h4 class="card-title"></h4>
+          <p class="card-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary buy" data-id="id">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Cart -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="cart-product-list-container"></div>
+          <hr>
+          <div class="container">
+            <form>
+              <div class="form-group row">
+                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                <input class="form-control col-8" type="text" id="client-name" required>
+              </div>
+              <div class="form-group row">
+                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                <input class="form-control col-8" type="email" id="client-email" required>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary order">Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+  <script async src="js/smooth-scroll.js"></script>
+  <script async src="js/alert-window.js"></script>
+  <script defer src="js/cart.js"></script>
+  <script defer src="js/product-list.js"></script>
+  <script defer src="js/index.js"></script>
+  <!--<script defer src="js/indexp.js"></script>-->
+</body>
+
+</html>
